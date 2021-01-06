@@ -29,4 +29,4 @@ df = pd.DataFrame(results)
 df.drop_duplicates()
 #output both csv and excel
 df.to_excel('output/results.xlsx')
-df.to_csv('output/results.csv', index_col=0, header=True)
+df.to_csv('output/results.csv', header=True)
