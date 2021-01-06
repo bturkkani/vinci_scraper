@@ -27,4 +27,6 @@ while url != 'done':
     url = input("url (type 'done' when done): ")
 df = pd.DataFrame(results)
 df.drop_duplicates()
-df.to_excel('results.xlsx')
+#output both csv and excel
+df.to_excel('output/results.xlsx')
+df.to_csv('output/results.csv')
