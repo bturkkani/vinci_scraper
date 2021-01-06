@@ -25,6 +25,6 @@ while url != 'done':
                     item = {"title": title,"link": link}
                     results.append(item)
     url = input("url (type 'done' when done): ")
-results = list( dict.fromkeys(results) )
+df.drop_duplicates()
 df = pd.DataFrame(results)
 df.to_excel('results.xlsx')
