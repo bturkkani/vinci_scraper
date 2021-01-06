@@ -22,9 +22,9 @@ while url != 'done':
                     anchor = divs[0].find('a')
                     link = anchor['href']
                     title = anchor.find('h3').text
-                    item = {"title": title,"link": link}
+                    item = {"title": title, "link": link}
                     results.append(item)
     url = input("url (type 'done' when done): ")
-df.drop_duplicates()
 df = pd.DataFrame(results)
+df.drop_duplicates()
 df.to_excel('results.xlsx')
